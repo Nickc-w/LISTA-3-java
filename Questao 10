@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+       int [ ] array = {6,8,10,3,2,1,22,15,13,27};
+       int maior = array[0],menor = array[0];
+
+       for (int i =1;i<array.length;i++){
+               if (array[i] > maior) maior = array[i];
+               else if(array[i] < menor) menor = array[i];
+       }
+        System.out.print("Array: ");
+        for (int i =0;i<10;i++) System.out.printf(" %d ",array[i]);
+
+        System.out.printf("\nValor minimo: %d",menor);
+        System.out.printf("\nValor maximo: %d",maior);
+
+    }
+     }
