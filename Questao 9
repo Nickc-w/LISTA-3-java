@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double [ ] array = new double[6];
+        double numero;
+
+        System.out.print("Informe um numero: ");
+        numero = sc.nextDouble();
+
+        for(int i=0;i<array.length;i++) array[i] = numero;
+
+        for(int i=0;i<array.length;i++) System.out.printf(" %.2f ",array[i]);
+
+        sc.close();
+    }
+}
