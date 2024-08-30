@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //ni = numero inicial, nu = ultimo numero
+        int ni = 0,nu = 0;
+
+
+        System.out.print("Informe o primeiro valor: ");
+        ni = sc.nextInt();
+
+        System.out.print("Informe o ultimo valor: ");
+        nu = sc.nextInt();
+
+        int [ ] array = {ni,3,4,5,8,9,nu};
+
+        for (int i = 0; i < array.length;i++){
+            System.out.printf(" %d ",array[i]);
+        }
+
+    sc.close();
+    }
+}
