@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int [ ] array = {1,2,3,4,5,6,7,8};
+        // i1 = primeiro indice, i2 = segundo indice
+        // temp = variavel temporaria que guarda um valor
+        int i1,i2,temp = 0;
+
+        System.out.print("Primeiro indice: ");
+        i1 = sc.nextInt();
+
+        System.out.print("Segundo indice: ");
+        i2 = sc.nextInt();
+
+        temp = array[i1];
+        array[i1] = array[i2];
+        array[i2] = temp;
+
+        for(int i =0;i<8;i++) {
+            System.out.printf(" %d ", array[i]);
+        }
+     sc.close();
+    }
+}
