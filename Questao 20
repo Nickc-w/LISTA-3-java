@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int tamanhoVetor;
+
+        System.out.print("Informe o tamanho do vetor: ");
+        tamanhoVetor = sc.nextInt();
+
+        int [ ] array = new int[tamanhoVetor];
+
+        System.out.print("Array: ");
+        for(int i = 0;i < array.length;i++) array[i] = sc.nextInt();
+
+        boolean testando = true;
+        for (int i = 0; i < array.length - 1;i++) {
+                if (array[i] > array[i+1]) {
+                    testando = false;
+                    break;
+                    }
+        }
+
+    if (testando) System.out.print("ORDEM CRESCENTE!");
+    else System.out.print("ORDEM NAO CRESCENTE!");
+
+    }
+}
