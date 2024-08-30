@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+        int [ ] array ={3,5,6,8,9};
+        int tamanhoM=0,ii=0;
+
+        for (int i=0;i <5;i++){
+            //tamanhoM = tamanho do array de multiplos
+            if (array[i]%3==0) tamanhoM++;
+        }
+        int [ ] novoArray = new int [tamanhoM];
+
+        for (int i=0;i <5;i++) {
+            if (array[i] % 3 == 0) {
+                novoArray[ii] = array[i];
+                ii++;
+            }
+        }
+        System.out.print("Array Original: ");
+        for (int i=0;i <array.length;i++) System.out.printf(" %d ",array[i]);
+
+        System.out.print("\nArray Com multiplos de 3: ");
+        for (int i=0;i <novoArray.length;i++) System.out.printf(" %d ",novoArray[i]);
+    }
+}
