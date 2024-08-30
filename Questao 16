@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+        int[ ] array = {2, 3, 8, 12, 5, 9, 2, 1, 7, 4};
+        int tamanho = 0,ii=0,cont = 0,iii=0;
+
+        for(int i = 0;i<10;i++) {
+                if (array[i] % 2 == 0) tamanho++;
+        }
+
+        int [ ] array2 = new int[tamanho];
+        for(int i = 0;i<10;i++){
+            if (array[i]%2==0){
+                array2[ii] = array[i];
+                ii++;
+            }
+        }
+
+        System.out.print("Vetor normal: ");
+        for(int i = 0;i<10;i++) System.out.printf(" %d ",array[i]);
+
+        System.out.print("\nVetor com valores pares: ");
+        for(int i = 0;i<tamanho;i++) System.out.printf(" %d ",array2[i]);
+    }
+}
