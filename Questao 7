@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int [ ] array = {8,22,3,54,1};
+        int [ ] arrayComValor = new int [6];
+        int numero,Tem = 0;
+
+        for (int i = 0; i<5;i++){
+            arrayComValor[i] = array[i];
+        }
+
+        System.out.print("Informe um numero inteiro: ");
+        numero = sc.nextInt();
+
+        for (int i = 0; i<5;i++) {
+            if (numero == array[i]) {
+                Tem++;
+                for (i = 0; i<5;i++) {
+                    System.out.printf(" %d ", array[i]);
+                }
+                break;
+            }
+        }
+        if (Tem == 0){
+            arrayComValor[5] = numero;
+            for (int i = 0; i<6;i++) System.out.printf(" %d ", arrayComValor[i]);
+        }
+
+          sc.close();
+        }
+    }
